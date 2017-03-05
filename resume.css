@@ -3,3 +3,10 @@
   font-size: 60%;
 }
 */
+
+.block {
+  border: solid 1px gray;
+  background: lightgray;
+  padding: 10px;
+  margin-bottom: 10px;
+}
