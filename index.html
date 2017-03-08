@@ -39,14 +39,16 @@
               <strong>Société Générale <span class="badge badge-primary years">2007-2017...</span></strong>
             </div>
             <div class="card-block">
-              <strong>Technical Leader of SG Web Toolkit <span class="badge badge-info years">2015-2017...</span></strong>
+              <strong>Technical Leader of SG Web Toolkit <span class="badge badge-success years">2015-2017...</span></strong>
+              <br>
               SG Web Toolkit is a transversal toolkit based on Angular JS, Angular 2+, React &amp; Bootstrap to develop web applications.
               This framework is used by 300+ applications and more than 1200 developers worldwide.
               The development team is composed of 7 developers.
 
               <hr>
 
-              <strong>Java developer <span class="badge badge-info years">2007-2015</span></strong>
+              <strong>Java developer <span class="badge badge-success years">2007-2015</span></strong>
+              <br>
               Java &amp; web developer on several structural financing applications and risks calculators.
             </div>
             <div class="card-footer text-muted">
@@ -72,7 +74,7 @@
 
           <div class="card">
             <div class="card-header">
-              <strong>Institut d’Astrophysique Spatiale <span class="badge badge-info years">2002-2005</span></strong>
+              <strong>Institut d’Astrophysique Spatiale <span class="badge badge-primary years">2002-2005</span></strong>
             </div>
             <div class="card-block">
               Java developer for EGSO project (European Grid of Solar Observations) to provide an unified access to several solar observatories.
@@ -128,30 +130,43 @@
     </div>
 
 
-    <div class="row">
-      <div class="col">
-        <div class="block">
-          <h4>Public Speaking</h4>
-            🇫🇷 Devoxx France 2012, 2013, 2014, 2015, 2017<br>
-            🇬🇧 Devoxx Antwerp 2012, 2013<br>
-            🇫🇷 Softshake Geneva 2013<br>
-            🇫🇷 Several Brown Bag Lunches
-          </ul>
+    <div class="block">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              <i class="fa fa-comment-o"></i> Public Speaking
+            </div>
+            <div class="card-block">
+              🇫🇷 Devoxx France 2012, 2013, 2014, 2015, 2017<br>
+              🇬🇧 Devoxx Antwerp 2012, 2013<br>
+              🇫🇷 Softshake Geneva 2013<br>
+              🇫🇷 Several Brown Bag Lunches
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="block">
-          <h4>Languages</h4>
-          🇫🇷 French<br>
-          🇬🇧 English
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              <i class="fa fa-globe"></i> Languages
+            </div>
+            <div class="card-block">
+              🇫🇷 French<br>
+              🇬🇧 English
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="block">
-          <h4>Hobbies</h4>
-          <i class="fa fa-space-shuttle"></i> Astronomy
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              <i class="fa fa-puzzle-piece"></i> Hobbies
+            </div>
+            <div class="card-block">
+              <i class="fa fa-space-shuttle"></i> Astronomy
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -181,35 +196,11 @@
       ]);
 
       var options = {
-        xcolors: ['red', 'green', 'blue', 'yellow', 'black', 'gray', 'cyan']
+        colors: ['#0275d8', '#5cb85c', '#e60028', '#f0ad4e', '#ab47bc']
       }
 
       chart.draw(dataTable, options);
     }
   </script>
-
-
-  <!--
-  <script type="text/javascript">
-    google.charts.load('current', {'packages':['timeline']});
-    google.charts.setOnLoadCallback(drawChart);
-    function drawChart() {
-      var container = document.getElementById('chart_div');
-      var chart = new google.visualization.Timeline(container);
-      var dataTable = new google.visualization.DataTable();
-
-      dataTable.addColumn({ type: 'string', id: 'President' });
-      dataTable.addColumn({ type: 'date', id: 'Start' });
-      dataTable.addColumn({ type: 'date', id: 'End' });
-      dataTable.addRows([
-        [ 'Institut d\'Astrophysique Spatiale', new Date(2002, 2, 1), new Date(2005, 0, 31) ],
-        [ 'General Eletrics [Valtech]',         new Date(2005, 1, 1),  new Date(2007, 2, 28) ],
-        [ 'Société Générale [Valtech]',         new Date(2007, 3, 11), new Date(2012, 0, 31) ],
-        [ 'Société Générale',                   new Date(2012, 1, 1),  new Date() ]]);
-
-      chart.draw(dataTable);
-    }
-  </script>
--->
 </body>
 </html>

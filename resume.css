@@ -58,3 +58,7 @@ body {
 .block.experiences {
   margin-top: 75px;
 }
+
+.card-header i.fa {
+  color: #777;
+}
