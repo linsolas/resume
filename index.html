@@ -9,135 +9,171 @@
   <link rel="stylesheet" href="resume.css">
 </head>
 <body>
-  <div class="container">
-    <div class="row">
+  <div class="container-fluid">
+    <div class="row header">
       <div class="col">
         <h1>Romain Linsolas</h1>
       </div>
-      <div class="col text-right">
-        <a href="https://twitter.com/romaintaz" target="_blank"><i class="fa fa-twitter"></i> @romaintaz</a>
-        <br>
-        <a href="https://www.linkedin.com/in/romainlinsolas/" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
-        <br>
-        <a href="http://stackoverflow.com/users/26457/romaintaz" target="_blank"><i class="fa fa-stack-overflow"></i> StackOverflow</a>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col">
-
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col">
-        <h2>Experiences</h2>
-        <div id="chart_div" style="height: 220px"></div>
-        <div class="card">
-          <div class="card-header">
-            <strong>Société Générale <span class="badge badge-primary years">2007-2017...</span></strong>
-          </div>
-          <div class="card-block">
-            <strong>Technical Leader of SG Web Toolkit <span class="badge badge-info years">2015-2017...</span></strong>
-            SG Web Toolkit is a transversal toolkit based on Angular JS, Angular 2+, React &amp; Bootstrap to develop web applications.
-            This framework is used by 300+ applications and more than 1200 developers worldwide. The development team is composed of 7 people.
-
-            <hr>
-
-            <strong>Java developer <span class="badge badge-info years">2007-2015</span></strong>
-            Java &amp; web developer on several structural financing applications and risks calculators.
-          </div>
-          <div class="card-footer text-muted">
-            AngularJS, Angular2, React, Bootstrap, HTML5, CSS3, Java, SpringMVC...
-          </div>
-        </div>
-
-        <br>
-
-        <div class="card">
-          <div class="card-header">
-            <strong>General Electrics <span class="badge badge-primary years">2005-2007</span></strong>
-          </div>
-          <div class="card-block">
-            Java &amp; web developer for hospital assets management.
-          </div>
-          <div class="card-footer text-muted">
-            Java, Struts, etc.
-          </div>
-        </div>
-
-        <br>
-
-        <div class="card">
-          <div class="card-header">
-            <strong>Institut d’Astrophysique Spatiale <span class="badge badge-info years">2002-2005</span></strong>
-          </div>
-          <div class="card-block">
-            Java developer for EGSO project (European Grid of Solar Observations) to provide an unified access to several solar observatories.
-          </div>
-          <div class="card-footer text-muted">
-            Java.
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr>
-
-    <div class="row">
-      <div class="col">
-        <h2>Skills</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <div class="card">
-          <div class="card-header">
-            <i class="fa fa-html5"></i> Web development
-          </div>
-          <div class="card-block">
-            HTML5, CSS3, JavaScript, AngularJS, Angular, React, jQuery.
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card">
-          <div class="card-header">
-            <i class="fa fa-coffee"></i> Java development
-          </div>
-          <div class="card-block">
-            JavaEE, Spring, Struts, Hibernate, Guava.
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card">
-          <div class="card-header">
-            <i class="fa fa-connectdevelop"></i> Software Factory
-          </div>
-          <div class="card-block">
-            Jenkins, SonarQube, XLDeploy, Git, etc.
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr>
-
-    <div class="row">
-      <div class="col">
-        <h2>Public Speaking</h2>
-        <ul class="fa-ul">
-          <li>🇫🇷 Devoxx France 2012, 2013, 2014, 2015, 2017</li>
-          <li>🇬🇧 Devoxx Antwerp 2012, 2013</li>
-          <li>🇫🇷 Softshake Geneva 2013</li>
-          <li>🇫🇷 Several Brown Bag Lunches</li>
+      <div class="col media">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="https://twitter.com/romaintaz" target="_blank"><i class="fa fa-twitter"></i><br>@romaintaz</a></li>
+          <li class="nav-item"><a href="https://www.linkedin.com/in/romainlinsolas/" target="_blank"><i class="fa fa-linkedin"></i><br>LinkedIn</a></li>
+          <li class="nav-item"><a href="http://stackoverflow.com/users/26457/romaintaz" target="_blank"><i class="fa fa-stack-overflow"></i><br>StackOverflow</a></li>
         </ul>
       </div>
     </div>
   </div>
 
+  <div class="container main-container">
+    <div class="me">
+      <img src="romain-linsolas.jpg" alt="Romain Linsolas">
+    </div>
+
+    <div class="block experiences">
+      <div class="row">
+        <div class="col">
+          <h4>Experiences</h4>
+          <div id="timeline" style="height: 150px"></div>
+          <div class="card">
+            <div class="card-header">
+              <strong>Société Générale <span class="badge badge-primary years">2007-2017...</span></strong>
+            </div>
+            <div class="card-block">
+              <strong>Technical Leader of SG Web Toolkit <span class="badge badge-info years">2015-2017...</span></strong>
+              SG Web Toolkit is a transversal toolkit based on Angular JS, Angular 2+, React &amp; Bootstrap to develop web applications.
+              This framework is used by 300+ applications and more than 1200 developers worldwide. The development team is composed of 7 people.
+
+              <hr>
+
+              <strong>Java developer <span class="badge badge-info years">2007-2015</span></strong>
+              Java &amp; web developer on several structural financing applications and risks calculators.
+            </div>
+            <div class="card-footer text-muted">
+              AngularJS, Angular, React, Bootstrap, HTML5, CSS3, Java, Spring, Spring MVC, Hibernate, Maven...
+            </div>
+          </div>
+
+          <br>
+
+          <div class="card">
+            <div class="card-header">
+              <strong>General Electrics <span class="badge badge-primary years">2005-2007</span></strong>
+            </div>
+            <div class="card-block">
+              Java &amp; web developer for hospital assets management.
+            </div>
+            <div class="card-footer text-muted">
+              Java, Struts, etc.
+            </div>
+          </div>
+
+          <br>
+
+          <div class="card">
+            <div class="card-header">
+              <strong>Institut d’Astrophysique Spatiale <span class="badge badge-info years">2002-2005</span></strong>
+            </div>
+            <div class="card-block">
+              Java developer for EGSO project (European Grid of Solar Observations) to provide an unified access to several solar observatories.
+            </div>
+            <div class="card-footer text-muted">
+              Java.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="row">
+        <div class="col">
+          <h4>Skills</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              <i class="fa fa-html5"></i> Web development
+            </div>
+            <div class="card-block">
+              HTML5, CSS3, JavaScript, AngularJS, Angular, React, jQuery.
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              <i class="fa fa-coffee"></i> Java development
+            </div>
+            <div class="card-block">
+              JavaEE, Spring, Struts, Hibernate, Guava.
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              <i class="fa fa-connectdevelop"></i> Software Factory
+            </div>
+            <div class="card-block">
+              Jenkins, SonarQube, XLDeploy, Git, etc.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="row">
+        <div class="col">
+          <h4>Public Speaking</h4>
+          <ul class="fa-ul">
+            <li>🇫🇷 Devoxx France 2012, 2013, 2014, 2015, 2017</li>
+            <li>🇬🇧 Devoxx Antwerp 2012, 2013</li>
+            <li>🇫🇷 Softshake Geneva 2013</li>
+            <li>🇫🇷 Several Brown Bag Lunches</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load("current", {packages:["timeline"]});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+
+      var container = document.getElementById('timeline');
+      var chart = new google.visualization.Timeline(container);
+      var dataTable = new google.visualization.DataTable();
+      dataTable.addColumn({ type: 'string', id: 'Position' });
+      dataTable.addColumn({ type: 'string', id: 'Name' });
+      dataTable.addColumn({ type: 'date', id: 'Start' });
+      dataTable.addColumn({ type: 'date', id: 'End' });
+      dataTable.addRows([
+        [ 'Employer', 'C.N.R.S.', new Date(2002, 2, 1), new Date(2005, 1, 28) ],
+        [ 'Employer', 'Valtech', new Date(2005, 2, 1),  new Date(2011, 0, 31) ],
+        [ 'Employer', 'Société Générale', new Date(2011, 1, 1),  new Date() ],
+
+        [ 'Mission', 'I.A.S.', new Date(2002, 2, 1), new Date(2005, 1, 28) ],
+        [ 'Mission', 'General Electrics', new Date(2005, 2, 1),  new Date(2007, 2, 28) ],
+        [ 'Mission', 'Société Générale', new Date(2007, 3, 11), new Date() ]
+      ]);
+
+      var options = {
+        xcolors: ['red', 'green', 'blue', 'yellow', 'black', 'gray', 'cyan']
+      }
+
+      chart.draw(dataTable, options);
+    }
+  </script>
+
+
+  <!--
   <script type="text/javascript">
     google.charts.load('current', {'packages':['timeline']});
     google.charts.setOnLoadCallback(drawChart);
@@ -156,43 +192,6 @@
         [ 'Société Générale',                   new Date(2012, 1, 1),  new Date() ]]);
 
       chart.draw(dataTable);
-    }
-  </script>
-  <!--
-  <script type="text/javascript">
-    google.charts.load('current', {'packages':['gantt']});
-    google.charts.setOnLoadCallback(drawChart);
-
-    function daysToMilliseconds(days) {
-      return days * 24 * 60 * 60 * 1000;
-    }
-
-    function drawChart() {
-
-      var data = new google.visualization.DataTable();
-      data.addColumn('string', 'Task ID');
-      data.addColumn('string', 'Task Name');
-      data.addColumn('date', 'Start Date');
-      data.addColumn('date', 'End Date');
-      data.addColumn('number', 'Duration');
-      data.addColumn('number', 'Percent Complete');
-      data.addColumn('string', 'Dependencies');
-
-      data.addRows([
-        ['Research', 'I.A.S.', new Date(2015, 0, 1), new Date(2015, 0, 5), null,  100,  null],
-        ['Write', 'XXX', null, new Date(2015, 0, 9), daysToMilliseconds(3), 25, 'Research,SG'],
-        ['Cite', 'YYY', null, new Date(2015, 0, 7), daysToMilliseconds(1), 20, 'Research'],
-        ['Complete', 'ZZZ', null, new Date(2015, 0, 10), daysToMilliseconds(1), 0, 'Cite,Write'],
-        ['SG', 'Société Générale', null, new Date(2012, 0, 6), new Date(2017, 0, 1), 100, 'Research']
-      ]);
-
-      var options = {
-        height: 275
-      };
-
-      var chart = new google.visualization.Gantt(document.getElementById('chart_div'));
-
-      chart.draw(data, options);
     }
   </script>
 -->

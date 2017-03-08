@@ -4,9 +4,57 @@
 }
 */
 
-.block {
-  border: solid 1px gray;
-  background: lightgray;
+body {
+  background-color: #f5f5f5;
+}
+
+.header {
+  background-color: #283e4a;
+  color: #c7d1d8;
   padding: 10px;
-  margin-bottom: 10px;
+}
+.header a {
+  color: #c7d1d8;
+}
+.header a i.fa {
+  font-size: 20px;
+}
+.header ul.navbar-nav {
+  position: absolute;
+  right: 0;
+}
+.header ul {
+  flex-direction: row;
+}
+.header ul li {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.main-container {
+  margin-bottom: 20px;
+}
+
+.me {
+  position: absolute;
+  top: -120px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+.me img {
+  height: 160px;
+  border-radius: 80px;
+  border: solid 2px #ccc;
+}
+
+.block {
+  background-color: #fff;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 3px rgba(0,0,0,.2);
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.block.experiences {
+  margin-top: 75px;
 }
