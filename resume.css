@@ -45,7 +45,7 @@ body {
 .me img {
   height: 160px;
   border-radius: 80px;
-  border: solid 2px #ccc;
+  border: solid 10px #f5f5f5;
 }
 
 .block {
