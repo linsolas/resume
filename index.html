@@ -7,10 +7,13 @@
   <link media="screen,print" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link media="screen,print" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link media="screen,print" rel="stylesheet" href="resume.css">
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <div class="container-fluid">
-    <div class="row header">
+    <div class="row header fixed">
       <div class="col">
         <h1>Romain Linsolas</h1>
       </div>
@@ -23,18 +26,28 @@
         </ul>
       </div>
     </div>
+    <div class="row sub-header">
+      <div class="col">
+        <span id="age"></span> ans, Montesson (78)
+      </div>
+      <div class="col text-right">
+        <i class="fa fa-envelope-o"></i> <span id="email"></span>
+      </div>
+    </div>
   </div>
 
   <div class="container-fluid main-container">
     <div class="me">
-      <img src="romain-linsolas.jpg" alt="Romain Linsolas">
+      <img src="images/romain-linsolas.jpg" alt="Romain Linsolas">
     </div>
 
     <div class="block experiences">
       <div class="row">
         <div class="col">
-          <h4>Experiences</h4>
-          <div id="timeline" style="height: 150px"></div>
+          <h5 class="category">Experiences</h5>
+
+          <div id="timeline" style="height: 140px;"></div>
+
           <div class="card">
             <div class="card-header">
               <strong>Société Générale <span class="badge badge-primary years">2007-2017...</span></strong>
@@ -95,7 +108,7 @@
     <div class="block">
       <div class="row">
         <div class="col">
-          <h4>Skills</h4>
+          <h5 class="category">Skills</h5>
         </div>
       </div>
       <div class="row">
@@ -116,7 +129,7 @@
               <i class="fa fa-coffee"></i> Java development
             </div>
             <div class="card-block">
-              JavaEE, Spring, JSF, Struts, Hibernate, Guava.
+              JavaEE, Spring, Spring MVC, JSF, Struts, Hibernate, Guava.
             </div>
           </div>
         </div>
@@ -138,15 +151,20 @@
     <div class="block">
       <div class="row">
         <div class="col">
+          <h5 class="category">Miscellaneous</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
           <div class="card">
             <div class="card-header">
               <i class="fa fa-comment-o"></i> Public Speaking
             </div>
             <div class="card-block">
-              🇫🇷 Devoxx France 2012, 2013, 2014, 2015, 2017<br>
-              🇬🇧 Devoxx Antwerp 2012, 2013<br>
-              🇫🇷 Softshake Geneva 2013<br>
-              🇫🇷 Several Brown Bag Lunches
+              <span class="flag-icon flag-icon-fr"></span> Devoxx France 2012, 2013, 2014, 2015, 2017<br>
+              <span class="flag-icon flag-icon-gb"></span> Devoxx Antwerp 2012, 2013<br>
+              <span class="flag-icon flag-icon-fr"></span> Softshake Geneva 2013<br>
+              <span class="flag-icon flag-icon-fr"></span> Several Brown Bag Lunches
             </div>
           </div>
         </div>
@@ -157,8 +175,8 @@
               <i class="fa fa-globe"></i> Languages
             </div>
             <div class="card-block">
-              🇫🇷 French<br>
-              🇬🇧 English
+              <span class="flag-icon flag-icon-fr"></span> French<br>
+              <span class="flag-icon flag-icon-gb"></span> English
             </div>
           </div>
         </div>
@@ -176,6 +194,11 @@
       </div>
     </div>
   </div>
+
+  <script type="text/javascript">
+    document.getElementById('age').innerHTML = Math.floor(((new Date() - new Date('1978-06-05')) / (1000 * 60 * 60 * 24)) / 365.24);
+    document.getElementById('email').innerHTML = atob('bGluc29sYXNAZ21haWwuY29t');
+  </script>
 
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script type="text/javascript">
