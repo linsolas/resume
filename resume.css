@@ -4,13 +4,6 @@
 }
 */
 
-.fake {
-  height: 140px;
-  background: url(images/capture.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 /* Bootstrap v4 correction when trying to print the page: https://github.com/twbs/bootstrap/issues/21771 */
 h1::first-letter,
 h2::first-letter,
@@ -88,7 +81,7 @@ body {
   margin-top: 15px;
 }
 .block.experiences {
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 .card-header i.fa {
@@ -97,6 +90,10 @@ body {
 
 .category {
   text-transform: uppercase;
+  color: #777;
+}
+
+.url {
   color: #777;
 }
 
